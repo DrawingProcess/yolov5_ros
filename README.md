@@ -38,6 +38,11 @@ roslaunch yolov5_ros yolov5.launch
 * Put the yaml file for your dataset classes into `yolov5_ros/src/yolov5/data`
 * Change related ROS parameters in yolov5.launch: `weights`,  `data`
 
+## Known Issue
+If `roslaunch yolov5_ros yolov5.launch` command, Then you able to following Error
+: `AssertionError: Invalid CUDA '-device cuda' requested, use '-device cpu' or pass valid CUDA device(s)`
+Then check your pytorch version (depend on your cuda version)
+
 ## Reference
 * YOLOv5 official repository: https://github.com/ultralytics/yolov5
 * YOLOv3 ROS PyTorch: https://github.com/eriklindernoren/PyTorch-YOLOv3
